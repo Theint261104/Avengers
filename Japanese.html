@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Avengers</title>
+    <link rel="icon" type="image/x-icon" href="Logo\logo1.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .container {
+         background-image: linear-gradient(rgba(70, 66, 66, 0.7),rgba(0,0,0,0.7)),url(Japan/JpBg.jpg);
+         background-position: center;
+         background-size: cover;
+        }    
+        /*Costume Gallery*/
+        .CostumesHeading{
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(247, 245, 243);
+            margin-bottom: 20px;
+            position: relative;
+            padding: 15px;
+        }
+        .CostumesHeading::after{
+            content: "";
+            position: relative;
+            width:28%;
+            height:3px;
+            margin: 7px auto;
+            display: block;
+            background-color:#c4b68b;
+    
+        }    
+        .about_CostumesLeft img{
+            padding: 25px;
+            float: left;
+            width: 100%;
+            transition: transform .5s;
+        }
+        .about_CostumesLeft img:hover{
+            transform: scale(1.1);
+        }
+        .about_CostumesLeft {
+            display: flex;
+            align-items: center;
+            text-align: justify;
+            padding: 20px;
+            color: rgb(5, 5, 5);
+        }
+        .costumesLeft_Info{
+           /* float: left;*/
+            padding-right: 20px;
+            color: rgb(240, 230, 216);
+            line-height: 20px;
+        }
+        .about_CostumesRight img{
+            clear: both;
+            padding: 25px;
+            float: right;
+            width: 100%;
+            transition: transform .5s;
+        }
+        .about_CostumesRight img:hover{
+            transform: scale(1.1);
+        }
+        .about_CostumesRight {        
+            display: flex;
+            align-items: center;
+            text-align: justify;
+            padding: 20px;            
+        }
+        .costumesRight_Info{
+            color: rgb(240, 230, 216);
+            padding-left: 20px;
+            line-height: 20px;
+        }
+        /*Responsive Costumes*/
+        @media (max-width: 600px) {
+          .about_CostumesRight img, .about_CostumesLeft img, .costumesLeft_Info, .costumesRight_Info{clear: both;
+        }
+      }
+                /*Slider*/
+                /*Slider*/
+            .ImageSlider_container{
+                width: 45%;
+                height: 9%;
+                
+            padding: 0px;
+            margin: auto;
+            box-sizing: padding-box;
+        }
+        .mySlides img, .column img {
+          vertical-align: middle;
+          width: min-content;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .ImageSlider_container {    
+            margin-top: 25px;
+          position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        /*Footer*/
+        f/*ooter{
+            margin-top: 25px;
+        }*/
+                </style>
+        </head>
+<body>
+    <div class="container">
+      <div class="navbar">
+        <img src="Logo\logo1.png" class="logo" width="150px"; height="30px"> 
+        
+        <nav>
+            <ul>
+                <li class="topnav"><a href="index.html">Home</a></li>
+                <li class="topnav"><a href="">Costumes</a>
+                  <ul>
+                    <li class="submenu"><a href="Japanese.html">Japanese</a> </li>
+                    <li class="submenu"><a href="South-Korean.html">South Korean</a> </li>
+                    <li class="submenu"><a href="Burmese.html">Burmese</a> </li>
+                    <li class="submenu"><a href="Chinese.html">Chinese </a></li>
+                </ul>
+                </li>
+                <li class="topnav"><a href="#Footer">Contact us</a></li>
+                <li class="topnav"><a href="About_US.html">About us</a></li>
+            </ul> 
+        </nav>       
+       <!----- <img src="Menu-icon.png"class="menu-icon">--->
+      
+    </div>
+        <h2 class="CostumesHeading">Japanese Traditional Costumes</h2>
+        <div class="about_CostumesLeft">
+            <img src="Japan\Jp1.png">
+            <div class="costumesLeft_Info">
+                <h3>Kimono</h3>
+                <p>Traditional Japanese clothing, also known as wafuku, has a rich history that spans thousands of years. The basic design of Japanese traditional clothing has remained relatively unchanged for centuries, with variations in fabric, color, and decoration reflecting changes in fashion and social status.The most iconic Japanese garment is the kimono, which is still worn today for formal occasions and important ceremonies. Kimonos are made from silk or cotton and feature intricate designs and patterns, often inspired by nature. The shape of the kimono has remained relatively unchanged for centuries, with wide sleeves and a simple, straight-line silhouette. </p>
+        
+            </div>
+        </div>
+        <div class="about_CostumesRight">
+            
+            <div class="costumesRight_Info">
+                <h3>(794-1185 AD)Kimono</h3>
+                <p>The traditional dress of Japanese <i> women </i>has a long and rich history that dates back to the Heian period (794-1185 AD). During this time, the upper-class women wore a long, flowing robe called a kosode, which was similar in design to the modern-day kimono. The kosode was made from silk and featured intricate designs and patterns, often depicting scenes from nature.Over time, the design of the kosode evolved to reflect changing fashion trends and social customs. During the Edo period (1603-1868 AD), the obi sash was introduced, which allowed women to create a more fitted silhouette by cinching the waist of their kimono. The obi became an important element of Japanese women's fashion, with different styles and colors of obi indicating the wearer's social status and age. </p>
+        
+            </div>
+            <img src="Japan\Jp2.png">
+        </div>
+        <div class="about_CostumesLeft">
+            <img src="Japan\Jp3.png">
+            <div class="costumesLeft_Info">
+                <h3>Kimono</h3>
+                <p>The traditional dress of Japanese <i>men </i>has a long and rich history that reflects the country's cultural and social evolution over the centuries. The earliest form of male traditional dress was likely the loincloth, made from woven grass or animal hides, which was worn by men in ancient Japan.During the Heian period (794-1185 AD), Japanese men began to wear a more refined form of dress, consisting of a long robe called a kosode and loose-fitting trousers called hakama. The kosode was similar in design to the modern-day kimono and was made from silk or cotton, with intricate designs and patterns that reflected the wearer's social status.</p>
+            </div>
+        </div>
+        <div class="about_CostumesRight">            
+            <div class="costumesRight_Info">
+                <h3>Kimono</h3>
+                <p>Japan is a country with a rich and vibrant history, and its traditional dress reflects its cultural heritage. The clothing worn by the Japanese kings, known as the Emperor or Tenno, has evolved over time and has been influenced by various cultural and historical factors.During the Heian period (794-1185), the Japanese imperial court adopted a new style of dress that was heavily influenced by Chinese fashion. The Emperor and his courtiers wore long, flowing robes with wide sleeves and elaborate embroidery. This style of dress became known as sokutai, and it remained the official court dress until the Meiji period (1868-1912).</p> 
+            </div>
+            <img src="Japan\Jp4.png">
+        </div>
+        <div class="about_CostumesLeft">
+            <img src="Japan\Jp5.png">
+            <div class="costumesLeft_Info">
+                <h3>Kimono</h3>
+                <p>In Japan, the wife of the Emperor is known as the Empress, and her traditional dress has also evolved over time.During the Heian period (794-1185), the Empress wore a type of robe called junihitoe, which was a highly formal and complex garment made up of twelve layers of robes.In the Edo period (1603-1868), the Empress and other members of the royal family wore formal kimono with intricate embroidery and other embellishments. After the Meiji Restoration in 1868, the Empress and other members of the royal family began to wear more Western-style clothing, but traditional Japanese dress remained an important part of their wardrobe. Today, the Empress and other members of the royal family continue to wear traditional Japanese dress for important ceremonies and events. </p>
+            </div>
+        </div>
+        <div class="about_CostumesRight">            
+            <div class="costumesRight_Info">
+                <h3>Kimono</h3>
+                <p>Nowadays, traditional Japanese clothing is still worn for special occasions such as weddings, tea ceremonies, and festivals, but is more commonly seen in museums and historical reenactments. However, many elements of traditional Japanese fashion have been incorporated into modern clothing designs, both in Japan and around the world. </p>
+            </div>
+            <img src="Japan\Jp6.png">
+        </div>
+    </div>
+    <audio controls autoplay loop style="margin: auto;">
+      <source src="Japan/Japanese.mp4" type="audio/mpeg">
+    </audio>
+        <!---Images slider--->
+        <div class="ImageSlider_container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="Japan\JpSlide1.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="Japan\JpSlide2.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="Japan\JpSlide3.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="Japan\JpSlide4.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="Japan\JpSlide5.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="Japan\JpSlide6.png" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">&#60;</a>
+            <a class="next" onclick="plusSlides(1)">&#62;</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        </div>
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="Japan\JpSlide1.png" style="width:100%;height:150px" onclick="currentSlide(1)" alt="Japanese Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Japan\JpSlide2.png" style="width:100%;height:150px" onclick="currentSlide(2)" alt="Japanese Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Japan\JpSlide3.png" style="width:100%;height:150px" onclick="currentSlide(3)" alt="Japanese Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Japan\JpSlide4.png" style="width:100%;height:150px" onclick="currentSlide(4)" alt="Japanese Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Japan\JpSlide5.png" style="width:100%;height:150px" onclick="currentSlide(5)" alt="Japanese Traditional Costumes">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="Japan\JpSlide6.png" style="width:100%;height:150px" onclick="currentSlide(6)" alt="Japanese Traditional Costumes">
+              </div>
+            </div>
+          
+
+        
+    <!---footer-->
+    <footer>
+
+
+      <div class="footernav" id="Footer">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Costumes</a></li>
+              <li><a href="#Footer">Contact us</a></li>
+              <li><a href="About_US.html">About us</a></li>
+
+          </ul>
+
+      </div>
+        <div class="footerAddr">
+            <h3>Address</h3>
+            <address>No.98,Shin Saw Pu Road<br>Mawlamyine township<br>Mon state,Myanmar.</address>
+        
+        </div>
+        <!--- <p>@copyright by pinterest.com</a></p>-->
+        <div class="socialMedia">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+               
+        <div class="footer-copyright">
+            @copyright by Avengers team.
+        </div>
+        </footer>
+
+        <!--Javascript-->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+             
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+             }
+            </script>
+
+    </body>
+</html>

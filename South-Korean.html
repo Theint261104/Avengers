@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Avengers</title>
+    <link rel="icon" type="image/x-icon" href="Logo\logo1.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .container {
+         background-image: linear-gradient(rgba(70, 66, 66, 0.7),rgba(0,0,0,0.7)),url(Korea/KrBg.jpg);
+         background-position: center;
+         background-size: cover;
+        }    
+        /*Costume Gallery*/
+        .CostumesHeading{
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(247, 245, 243);
+            margin-bottom: 20px;
+            position: relative;
+            padding: 15px;
+        }
+        .CostumesHeading::after{
+            content: "";
+            position: relative;
+            width:28%;
+            height:3px;
+            margin: 7px auto;
+            display: block;
+            background-color:#c4b68b;
+    
+        }    
+        .about_CostumesLeft img{
+            padding: 25px;
+            float: left;
+            width: 100%;
+            transition: transform .5s;
+        }
+        .about_CostumesLeft img:hover{
+            transform: scale(1.1);
+        }
+        .about_CostumesLeft {
+            display: flex;
+            align-items: center;
+            text-align: justify;
+            padding: 20px;
+            color: rgb(5, 5, 5);
+        }
+        .costumesLeft_Info{
+            float: left;
+            padding-right: 20px;
+            color: rgb(240, 230, 216);
+            line-height: 20px;
+        }
+        .about_CostumesRight img{
+            clear: both;
+            padding: 25px;
+            float: right;
+            width: 100%;
+            transition: transform .5s;
+        }
+        .about_CostumesRight img:hover{
+            transform: scale(1.1);
+        }
+        .about_CostumesRight {        
+            display: flex;
+            align-items: center;
+            text-align: justify;
+            padding: 20px;            
+        }
+        .costumesRight_Info{
+            color: rgb(240, 230, 216);
+            padding-left: 20px;
+            line-height: 20px;
+        }
+            
+        /*Slider*/
+        /*Slider*/
+    .ImageSlider_container{
+        width: 45%;
+        height: 9%;
+        
+    padding: 0px;
+    margin: auto;
+    box-sizing: padding-box;
+}
+.mySlides img, .column img {
+  vertical-align: middle;
+  width: min-content;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.ImageSlider_container {    
+    margin-top: 25px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*Footer*/
+f/*ooter{
+    margin-top: 25px;
+}*/
+        </style>
+</head>
+<body>
+    <div class="container">
+      <div class="navbar">
+        <img src="Logo\logo1.png" class="logo" width="150px"; height="30px"> 
+        
+        <nav>
+            <ul>
+                <li class="topnav"><a href="index.html">Home</a></li>
+                <li class="topnav"><a href="">Costumes</a>
+                  <ul>
+                    <li class="submenu"><a href="Japanese.html">Japanese</a> </li>
+                    <li class="submenu"><a href="South-Korean.html">South Korean</a> </li>
+                    <li class="submenu"><a href="Burmese.html">Burmese</a> </li>
+                    <li class="submenu"><a href="Chinese.html">Chinese </a></li>
+                </ul>
+                </li>
+                <li class="topnav"><a href="#Footer">Contact us</a></li>
+                <li class="topnav"><a href="About_US.html">About us</a></li>
+            </ul> 
+        </nav>       
+       <!----- <img src="Menu-icon.png"class="menu-icon">--->
+      
+    </div>
+        <h2 class="CostumesHeading">South Korean Traditional Costumes</h2>
+        <div class="about_CostumesLeft">
+            <img src="Korea/k1.jpg">
+            <div class="costumesLeft_Info">
+                <h3>Hanbok</h3>
+                <p>Korean traditional dress, known as hanbok, has a long and rich history that dates back thousands of years. The development of hanbok has been influenced by various factors such as social status, climate, and cultural exchange with neighboring countries. Here is a brief overview of the history of Korean traditional dress:Unified Silla Period (668 - 935 AD): During this period, hanbok became more elaborate and colorful. The jeogori became longer and wider, and the chima was adorned with embroidery and patterns.Joseon Period (1392 - 1910 AD): Hanbok during this period became more refined and elegant. The use of bright colors was discouraged, and instead, subdued colors such as white, gray, and black were preferred. The chima became slimmer and shorter, and the jeogori became more fitted.Modern Era (1910 - present): During the Japanese occupation of Korea (1910-1945), the wearing of hanbok was discouraged, and Western clothing became more popular. After the liberation of Korea in 1945, there was a resurgence of interest in hanbok, and it has since become a symbol of Korean cultural identity.</p>
+            </div>
+        </div>
+        <div class="about_CostumesRight">
+            
+            <div class="costumesRight_Info">
+                <h3>(57 BC - 668 AD) Hanbok</h3>
+                <p>Three Kingdoms Period (57 BC - 668 AD): During this period, girls' hanbok was similar to that of adults, consisting of a jeogori, a short jacket with narrow sleeves, and a chima, a wrap-around skirt. The colors and patterns of the fabric were simpler and plainer than those of adults.Goryeo Period (918 - 1392 AD): Girls' hanbok during this period was influenced by Chinese fashion. The chima became longer and fuller, and the jeogori became even longer and wider. The use of silk fabric became more common.Joseon Period (1392 - 1910 AD): During this period, girls' hanbok became more refined and elegant. The use of bright colors was discouraged, and instead, subdued colors such as white, gray, and black were preferred. Modern Era (1910 - present): During the Japanese occupation of Korea (1910-1945), the wearing of hanbok was discouraged, and Western clothing became more popular. Today, girls' hanbok is still worn for special occasions such as weddings, traditional festivals, and cultural events.</p>
+            </div>
+            <img src="Korea/k2.jpg">
+        </div>
+        <div class="about_CostumesLeft">
+            <img src="Korea/k3.jpg">
+            <div class="costumesLeft_Info">
+                <h3>Men Hanbok</h3>
+                <p>Korean traditional <i>man dress, also known as hanbok</i>, has a long and rich history that dates back thousands of years. Here is a brief overview of the history of Korean traditional man dress:Unified Silla Period (668 - 935 AD): During this period, hanbok for men became more colorful and elaborate. The jeogori became longer and wider, and the baji became fuller. Men also began to wear a vest called a durumagi.Goryeo Period (918 - 1392 AD): Hanbok for men during this period was heavily influenced by Chinese fashion. The jeogori became even longer and wider, and the baji became even fuller. Men also began to wear a long overcoat called a magoja.Modern Era (1910 - present): During the Japanese occupation of Korea (1910-1945), the wearing of hanbok was discouraged, and Western clothing became more popular. After the liberation of Korea in 1945, there was a resurgence of interest in hanbok, and it  
+                  has since become a symbol of Korean cultural identity. </p>
+           </div>
+        </div>
+        <div class="about_CostumesRight">            
+            <div class="costumesRight_Info">
+                <h3>Korean king's traditional dress</h3>
+                <p>Korean king's traditional dress, also known as <i>bokjori</i> , has a long and rich history that dates back thousands of years. Here is a brief overview of the history of Korean king's traditional dress:Three Kingdoms Period (57 BC - 668 AD): During this period, kings wore a long robe called a bongwon over their jeogori and baji. Unified Silla Period (668 - 935 AD): During this period, the bongwon became more elaborate and was made of more luxurious materials such as gold thread and jade ornaments.Goryeo Period (918 - 1392 AD): Bokjori for kings during this period was heavily influenced by Chinese fashion. The kings wore a type of robe called a daeryeongui, which was made of silk and adorned with elaborate embroidery and patterns. Joseon Period (1392 - 1910 AD): During this period, bokjori for kings became more refined and elegant. The kings wore a type of robe called a gojongui, which was made of silk and adorned with intricate embroidery and patterns. </p>
+             </div>
+            <img src="Korea/k4.jpg">
+        </div>
+        <div class="about_CostumesLeft">
+            <img src="Korea/k5.jpg">
+            <div class="costumesLeft_Info">
+              <h3>Korean queen's traditional dress</h3>
+              <p>Korean queen's traditional dress, also known as queen's <i>bokjori</i>, has a long and rich history that dates back thousands of years. Here is a brief overview of the history of Korean queen's traditional dress:Three Kingdoms Period (57 BC - 668 AD): During this period, queens wore a long robe called a wonsam over their jeogori and baji. Unified Silla Period (668 - 935 AD): During this period, the wonsam became more elaborate and was made of more luxurious materials such as gold thread and jade ornaments.Goryeo Period (918 - 1392 AD): Bokjori for queens during this period was heavily influenced by Chinese fashion. The queens wore a type of robe called a jangguui, which was made of silk and adorned with elaborate embroidery and patterns. Joseon Period (1392 - 1910 AD): During this period, bokjori for queens became more refined and elegant. The color of the bokjori was determined by the queen's position.In modern times, queen's bokjori is characterized by luxurious materials, intricate embroidery, and patterns. </p>
+            </div>
+        </div>
+        <div class="about_CostumesRight">            
+            <div class="costumesRight_Info">
+                <h3>Korean traditional wedding dress</h3>
+                <p>Today, Korean traditional wedding dress, also known as Hanbok, is still popular for wedding ceremonies, especially for couples who want to incorporate their cultural heritage into their special day. The modern Korean wedding Hanbok is a fusion of traditional designs and contemporary styles, with a focus on elegance and simplicity.For the bride, a typical Korean wedding Hanbok consists of a jeogori (a short jacket), chima (a long skirt), and a traditional headpiece called a jokduri. The jeogori is usually made of silk or satin, and the chima is made of a lightweight fabric such as silk or cotton. The colors of the Hanbok are usually bright and vibrant, with red being a popular choice for the bride.For the groom, a typical Korean wedding Hanbok consists of a jeogori and baji (pants) made of silk or satin. The colors of the Hanbok are usually more subdued, with black or dark blue being popular choices.Overall, Korean traditional wedding dress is a beautiful and meaningful way to honor one's cultural heritage while celebrating a special occasion. </p> </div>
+            <img src="Korea/k6.jpg">
+        </div>
+    </div>
+    <!---Audio -->
+    <audio controls autoplay loop style="margin: auto;">
+      <source src="Korea/korean.mp4" type="audio/mpeg">
+    </audio>
+        <!---Images slider--->
+        <div class="ImageSlider_container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="Korea/kSlide1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="Korea/kSlide2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="Korea/kSlide3.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="Korea/kSlide4.jpeg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="Korea/kSlide5.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="Korea/kSlide6.jpg" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">&#60;</a>
+            <a class="next" onclick="plusSlides(1)">&#62;</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        </div>
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="Korea/kSlide1.jpg" style="width:100%;height:150px" onclick="currentSlide(1)" alt="South-Korean Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Korea/kSlide2.jpg" style="width:100%;height:150px" onclick="currentSlide(2)" alt="South-Korean Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Korea/kSlide3.jpg" style="width:100%;height:150px" onclick="currentSlide(3)" alt="South-Korean Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Korea/kSlide4.jpeg" style="width:100%;height:150px" onclick="currentSlide(4)" alt="South-Korean Traditional Costumes">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="Korea/kSlide5.jpg" style="width:100%;height:150px" onclick="currentSlide(5)" alt="South-Korean Traditional Costumes">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="Korea/kSlide6.jpg" style="width:100%;height:150px" onclick="currentSlide(6)" alt="South-Korean Traditional Costumes">
+              </div>
+            </div>
+          
+
+        
+    <!---footer-->
+    <footer>
+
+
+      <div class="footernav" id="Footer">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Costumes</a></li>
+              <li><a href="#Footer">Contact us</a></li>
+              <li><a href="About_US.html">About us</a></li>
+
+          </ul>
+
+      </div>
+        </div>
+        <div class="footerAddr">
+            <h3>Address</h3>
+            <address>No.98,Shin Saw Pu Road<br>Mawlamyine township<br>Mon state,Myanmar.</address>
+        
+        </div>
+        <!--- <p>@copyright by pinterest.com</a></p>-->
+        <div class="socialMedia">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+               
+        <div class="footer-copyright">
+            @copyright by Avengers team.
+        </div>
+        </footer>
+
+        <!--Javascript-->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+             
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+    </body>
+</html>

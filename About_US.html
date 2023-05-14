@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avengers</title>
+  <link rel="icon" type="image/x-icon" href="Logo\logo1.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  /*.container {
+         background-image: linear-gradient(rgba(70, 66, 66, 0.7),rgba(0,0,0,0.7)),url(aboutBg.jpg);
+         background-position: center;
+         background-size: cover;
+        }  */ 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background:rgb(254,141,198);
+  background:linear-gradient(90deg,rgb(220, 162, 191)35%, rgba(254,223,199,1)100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 36px;
+  padding: 0 8px;
+}
+.column h2{
+    font-size: 35px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+  margin: 30px;
+  padding: 30px 15px;
+  text-align: justify;
+  line-height: 10px;  
+  /*background-color: rgb(190, 177, 126);*/
+}
+.card img{
+    border-radius: 48%;margin: 20px 150px;
+}
+/*
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(246, 200, 211);
+  opacity: 0.9;
+  color: white;
+}*/
+/*BOUNCE MARQUEE*/
+.bounce {
+                height: 50px;
+                overflow: hidden;
+                position: relative;
+                background: #fefefe;
+                color: #333;
+                border: 1px solid #4a4a4a;
+            }
+            
+            .bounce p {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                line-height: 50px;
+                text-align: center;
+                -moz-transform: translateX(50%);
+                -webkit-transform: translateX(50%);
+                transform: translateX(50%);
+                -moz-animation: bouncing-text 5s linear infinite alternate;
+                -webkit-animation: bouncing-text 5s linear infinite alternate;
+                animation: bouncing-text 10s linear infinite alternate;
+            }
+            
+            @-moz-keyframes bouncing-text {
+                0% {
+                    -moz-transform: translateX(50%);
+                }
+                100% {
+                    -moz-transform: translateX(-50%);
+                }
+            }
+            
+            @-webkit-keyframes bouncing-text {
+                0% {
+                    -webkit-transform: translateX(50%);
+                }
+                100% {
+                    -webkit-transform: translateX(-50%);
+                }
+            }
+            
+            @keyframes bouncing-text {
+                0% {
+                    -moz-transform: translateX(50%);
+                    -webkit-transform: translateX(50%);
+                    transform: translateX(50%);
+                }
+                100% {
+                    -moz-transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                }
+            }
+            /*END BOUNCE MARQUEE*/
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+      <div class="navbar">
+        <img src="Logo\logo1.png" class="logo" width="150px" ; height="30px">
+
+        <nav>
+            <ul>
+                <li class="topnav"><a href="index.html">Home</a></li>
+                <li class="topnav"><a href="">Costumes</a>
+                  <ul>
+                    <li class="submenu"><a href="Japanese.html">Japanese</a> </li>
+                    <li class="submenu"><a href="South-Korean.html">South Korean</a> </li>
+                    <li class="submenu"><a href="Burmese.html">Burmese</a> </li>
+                    <li class="submenu"><a href="Chinese.html">Chinese </a></li>
+                </ul>
+                </li>
+                <li class="topnav"><a href="#Footer">Contact us</a></li>
+                <li class="topnav"><a href="About_US.html">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<div class="about-section">
+  <!--<h2 style="text-align:center; margin-top: 20px;">Our Team</h2>
+  <marquee style="font-size: 18px; color: rgb(241, 242, 241);" width="60%" direction="left" height="100px">
+    TRAVEL THE WORLD THROUGH THE SHOWCASE OF NATIONAL COSTUMES.  
+  </marquee>-->
+  <!--<h1>About Us </h1>
+  <p>Our purpose is to make it easy for you to visit our website and learn about the different traditional costumes of some Asia countries.</p>-->
+</div>
+
+<h2 style="text-align:center; margin-top: 20px;color: #4a4a4a;">Our Team</h2><br><br>
+<marquee style="font-size: 18px; color: #4a4a4a" width="60%" direction="left" height="100px">
+  TRAVEL THE WORLD THROUGH THE SHOWCASE OF NATIONAL COSTUMES.  
+</marquee>
+<!--<p>Our purpose is to make it easy for you to visit our website and learn about the different traditional costumes of some Asia countries.</p>-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Personal Contact/ZM.png" alt="Jane" style="width:40%">
+      <div class="container">
+        <h2>Zin Mee Theint</h2><br><br>
+        <p class="title" style="font-weight: bold;font-size: larger;"><i>Main Developer</i></p><br>
+        <p>"My name is Zin Mee Theint, and I attend year9 Azura campus.First, I started going to Edusn international digital school in July 2022.I was so excited to study ICT.I suffered a lot when I first started learning in coding, but with the teacher's patience, I made significant progress.In class, I had been paying close attention.This website was created using a lot of the knowledge we learned through the academic year.We find ICT to be a very challenging subject, yet Tr Mya Pwint Phyu gave us the best instruction this semester, which is how we ended up in this predicament."
+        </p><br>
+        <p>zinmeetheint@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Personal Contact/HNTL1.png" alt="Jane" style="width:40%">
+      <div class="container">
+        <h2>Hmone Natha lwin</h2><br><br>
+          <p class="title" style="font-weight: bold;font-size: larger;"><i>Information finder</i></p><br>
+        <p>"My name is Hmone Natha Lwin.I'm from year9 Azura Campus.Together with my friend Zim Mee Theint, I also attended EDUSN DIGITAL SCHOOL in July 2022.ICT is not some of my favorite subjects, and I have no favorite any subjects.Before, there were three of us in our group, and those were great days. We were first concerned about our ability to complete the task.  We truly made an effort. We find ICT to be a very challenging subject, yet Tr Mya Pwint Phyu gave us the best instruction this semester, which is how we ended up in this predicament."
+        </p><br>
+        <p>hmonenathalwin@gmail.com</p>
+      </div>
+    </div>
+  </div>
+        <!--<p><button class="button">Contact</button></p>-->
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+</div>
+  <!--- footer-->
+  <footer>
+
+
+    <div class="footernav" id="Footer">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Costumes</a></li>
+            <li><a href="#Footer">Contact us</a></li>
+            <li><a href="About_US.html">About us</a></li>
+
+        </ul>
+
+    </div>
+    <div class="footerAddr">
+        <h3>Address</h3>
+        <address>No.98,Shin Saw Pu Road, <br>Mawlamyine township<br>Mon State, Myanmar.</address>
+
+    </div>
+    <!--- <p>@copyright by pinterest.com</a></p>-->
+    <div class="socialMedia">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+
+    <div class="footer-copyright">
+        @copyright by Avengers team.
+    </div>
+</footer>
+
+</body>
+
+</html>

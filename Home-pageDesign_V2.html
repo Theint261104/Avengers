@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="lg.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+    ul li ul{
+        display:none ;
+    }
+    ul li:hover ul{
+        margin-top: 10px;
+        display: block;
+        color: black;
+        max-width: 100px;
+        background-color: #f9f9f9;
+        position: absolute;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);	
+        z-index: 1; /* specifies the stack order of an element */
+    }
+    ul li ul li a{
+        color: black;
+        
+    }
+    ul li:hover ul li{
+        float: none;
+        padding: 5px 3px;
+        font-size: smaller;
+    }
+        /*
+        *{
+            margin: 0px;
+            padding:0px;
+            font-family: snas-serif;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            height:100vh;
+            background: whitesmoke;
+            align-items: center;
+
+
+        }*/
+        .category-container{
+            display:flex;
+        }
+
+.heading-category{
+    font-size: 22px;
+    color: rgb(70, 116, 94);
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+.heading-category::after{
+    content: "";
+    position:relative;
+    width: 20%;
+    height:4px;
+    display:block;
+    margin: 0 auto;
+    background-color: #070706;
+    
+}
+        .category-card{
+            height:500px;
+            margin: 39px;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+        }
+        
+        .image-category{
+            
+            height: 500px;
+            width: 100%;
+            border-radius: 3px;
+            transition: .25s;
+          
+        }
+        .intro{
+            height:70px;
+            width:350px;
+            padding:6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom:-290px;
+            background: rgb(27, 27, 27, .5);
+            color:white;
+            transition: .5s;
+        }
+        .category-container h1{
+            margin:10px;
+            font-size:18px;
+
+        }
+        .category-container p{
+            font-size:16px;
+            margin:20px;
+            visibility: hidden;
+            opacity: 0;
+        }
+        span{
+            font-weight: bold;
+
+        }
+        .category-card:hover{
+            cursor:pointer;
+
+        }
+        .category-card:hover .intro{
+            height: auto;
+            bottom:-390px;
+            background: black;
+
+        }
+        .category-card:hover p{
+            opacity: 1;
+            visibility: visible;
+
+        }
+        .category-card:hover img{
+            transform: scale(1.1)rotate(-3dge);
+        }
+    </style>
+</head>
+<body>
+    <div class="Homecontainer">
+        <div class="navbar">
+            <img src="Avengers/Logo1.png"class="logo" width="150px"; height="30px"> 
+            
+            <nav>
+                <ul>
+                    <li><a href="Home-PageDesign.html">Home</a></li>
+                    <li><a href="">Costumes</a>
+                        <ul>
+                            <li><a href="Japanese.html">Japanese</a> </li>
+                            <li>South Korean </li>
+                            <li>Burmese </li>
+                            <li>Vietnamese</li> 
+                            <li>Chinese </li>
+                            <li>Indian </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="About_US.html">About us</a></li>
+                </ul> 
+            </nav>
+           <!----- <img src="Menu-icon.png"class="menu-icon">--->
+          
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Avangers</h1>
+                <p>Wearing traditional clothes represents national identity and love for them.
+                     Many people wearing the same traditional clothes together gives a feel of patriotism as well as 
+                     connectivity in culture and with each other as well as a sense of belongingness with the country.</p>
+               <!---- <p>Why are traditional costumes important?
+                    Fashion is one of the more visible elements of
+                     culture that tell us stories about a place's
+                      heritage and history. From the design to the
+                       color and pattern, these pieces can also serve
+                        as symbols of social or marital status, or 
+                        signify an important occasion.</p>--->
+                        <button type="button">Let's Start</button> 
+            </div>
+            <div class="col">
+                <div class="card-1">
+                    <div class="intro_card-1">
+                        <h5>Japanese Traditional Dress</h5>
+                        <p>The traditional dress of Japan is called kimono(和服).</p>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <div class="intro_card-2">
+                        <h5>South Korean Traditional Dress</h5>
+                        <p>The traditional dress of Korean is called hanbok(한복).</p>
+                    </div>
+                </div>
+                <div class="card-3">
+                    <div class="intro_card-3">
+                        <h5>Burmese Traditional Dress</h5>
+                        <p>The traditional dress of Burmese is called longyi(လုံချည်).</p>
+                    </div>
+                </div>
+                <div class="card-4">
+                    <div class="intro_card-4">
+                        <h5>Indian Traditional Dress</h5>
+                        <p>The traditional dress of Indian is called saree(साड़ी) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <h2 class="heading-category">Categories</h2>
+    <div class="category-container">
+        
+        <div class="category-card">
+            <img src="Bg.jpg" alt="Japan" class="image-category">
+            <div class="intro">
+                <h1>Japan Traditional dress </h1>
+                <p>Japan<span>Japan</span>The traditional dress of Japan is the kimono. Kimonos, which are generally made of
+                    silk, have large sleeves and reach from the shoulders all the way down to the heels.
+                    They are tied with a wide belt called an obi</p>
+            </div>
+        </div>
+    <div class="category-card">
+        <img src="Bg.jpg" alt="Japan" class="image-category">
+        <div class="intro">
+            <h1>South Korean Traditional dress </h1>
+            <p>Japan<span>Japan</span>The traditional dress of Japan is the kimono. Kimonos, which are generally made of
+                silk, have large sleeves and reach from the shoulders all the way down to the heels.
+                They are tied with a wide belt called an obi</p>
+        </div>
+        </div>
+        <div class="category-card">
+            <img src="Bg.jpg" alt="Japan" class="image-category">
+            <div class="intro">
+                <h1>Burmese Traditional dress </h1>
+                <p>Japan<span>Japan</span>The traditional dress of Japan is the kimono. Kimonos, which are generally made of
+                    silk, have large sleeves and reach from the shoulders all the way down to the heels.
+                    They are tied with a wide belt called an obi</p>
+            </div>
+            </div>
+        </div>
+    <!---example footer-->
+    <footer>
+        
+        
+        <div class="footernav">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Costumes</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="About-US.html">About us</a></li>
+        
+            </ul>
+        
+        </div>
+        <div class="footerAddr">
+            <h3>Address</h3>
+            <address>No123, aaaaaa</address>
+        
+        </div>
+        <!--- <p>@copyright by pinterest.com</a></p>-->
+        <div class="socialMedia">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        
+        
+        <div class="footer-copyright">
+            @copyright by pinterest.com. - Terms of Use - Privacy Policy
+        </div>
+        </footer>
+
+    </body>
+</html>
